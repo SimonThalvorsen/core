@@ -1,3 +1,6 @@
+## 3.24.5
+- Fixed daemon hang on SIGTERM during child process wait (ENT-13720)
+
 ## 3.24.4
 
 - Enabled `select_region` to converge across multiple passes (CFE-3866)
