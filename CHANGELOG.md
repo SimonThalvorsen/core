@@ -1,3 +1,28 @@
+## 3.28.0
+- Adapt date constraints to allow dates after Y2038 (CFE-4620)
+- Added a new smtpport body executor control attribute to specify on which port to send mail
+  (ENT-4648)
+- Added getdir command to cf-net, recursively copies directory
+  (CFE-2986)
+- Added mpf_masterfiles_stage_build_always flag file to enable legacy behavior of masterfiles-stage to always run cfbs build
+  (ENT-13756)
+- Adds optionality to arguments in the getgroups()-function (ENT-9962)
+- Adds optionality to the arguments in the getusers()-function.
+  (ENT-9962)
+- Allow expandrange to output a single value
+- Enabled select_region to converge across multiple passes (CFE-3866)
+- Expanded syntax-description to include min/max argcount for func
+  (ENT-13879)
+- Fixed buffer overflow in the files promise
+- Fixed bug where isipinsubnet() fails to validate bogus IPv4 addresses when checking the 0.0.0.0/0 range
+  (CFE-3081)
+- Fixed daemon hang on SIGTERM during child process wait (ENT-13720)
+- Fixed memory leak in isreadable() policy function
+- Fixed segfault when cf-secret print-headers is called without an encrypted file
+  (CFE-4647)
+- Fixed wording of premature error when changing into non-existant directory
+  (CFE-4007)
+
 ## 3.27.0
 - Added evaluation order option in body agent control (ENT-13295)
 - Added findlocalgroups() policy function (CFE-4550)
