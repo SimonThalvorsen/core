@@ -1,3 +1,11 @@
+## 3.24.5
+
+- Added 2 most recent self upgrade log files to cf-support collection
+  (ENT-14144)
+- Fixed cf-agent SIGABRT on SIGTERM during early policy validation
+  (ENT-14139)
+- Fixed daemon hang on SIGTERM during child process wait (ENT-13720)
+
 ## 3.24.4
 
 - Enabled `select_region` to converge across multiple passes (CFE-3866)
